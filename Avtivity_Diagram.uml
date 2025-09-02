@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLsec4NDF="http:///schemas/UMLsec4NDF/_dw8VIIdhEfCI69AHEoVYDw/76" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLsec4NDF/_dw8VIIdhEfCI69AHEoVYDw/76 UMLsec4NDF.profile.uml#_dw9jQIdhEfCI69AHEoVYDw">
+  <uml:Model xmi:id="_uwbqwE06EfCL1fz0pZCJ2Q" name="Avtivity_Diagram">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_u5FQcE06EfCL1fz0pZCJ2Q">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_u4mIQE06EfCL1fz0pZCJ2Q" name="ActivityDiagram_PoD_Attack" visibility="public" node="_Il1ggE1REfCPTrAqaA8TMg _UTmIIE1REfCPTrAqaA8TMg _ZbMUEE1REfCPTrAqaA8TMg _kBp8cE1REfCPTrAqaA8TMg _pwV9kE1REfCPTrAqaA8TMg _zUBTQE1REfCPTrAqaA8TMg _38LKIE1REfCPTrAqaA8TMg _N-EUAE1SEfCPTrAqaA8TMg _PrOZYE1SEfCPTrAqaA8TMg _T5vBME1SEfCPTrAqaA8TMg _quFiwE1SEfCPTrAqaA8TMg _vUxaAE1SEfCPTrAqaA8TMg _wrO2oE1SEfCPTrAqaA8TMg _7goS4E1SEfCPTrAqaA8TMg _L7pT0E1TEfCPTrAqaA8TMg _PrXG0E1TEfCPTrAqaA8TMg _nKIeYE1TEfCPTrAqaA8TMg _qNW-0E1TEfCPTrAqaA8TMg _uQA78E1TEfCPTrAqaA8TMg _yCgWIE1TEfCPTrAqaA8TMg _0jfsME1TEfCPTrAqaA8TMg _4FsAkE1TEfCPTrAqaA8TMg" group="_AWuhIE09EfCL1fz0pZCJ2Q _BKti0E09EfCL1fz0pZCJ2Q _CLN9kE09EfCL1fz0pZCJ2Q _AnLA0E1REfCPTrAqaA8TMg _Ea7mUE1REfCPTrAqaA8TMg _Bss1kE09EfCL1fz0pZCJ2Q">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_chy4oE1REfCPTrAqaA8TMg" inPartition="_AWuhIE09EfCL1fz0pZCJ2Q" target="_UTmIIE1REfCPTrAqaA8TMg" source="_Il1ggE1REfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_d_XC0E1REfCPTrAqaA8TMg" inPartition="_AWuhIE09EfCL1fz0pZCJ2Q" target="_ZbMUEE1REfCPTrAqaA8TMg" source="_UTmIIE1REfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_rNgfIE1REfCPTrAqaA8TMg" target="_kBp8cE1REfCPTrAqaA8TMg" source="_ZbMUEE1REfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_WtneEE1SEfCPTrAqaA8TMg" target="_zUBTQE1REfCPTrAqaA8TMg" source="_pwV9kE1REfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_aO0T8E1SEfCPTrAqaA8TMg" name="Yes" inPartition="_Bss1kE09EfCL1fz0pZCJ2Q" target="_N-EUAE1SEfCPTrAqaA8TMg" source="_38LKIE1REfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_b4K3YE1SEfCPTrAqaA8TMg" inPartition="_Bss1kE09EfCL1fz0pZCJ2Q" target="_PrOZYE1SEfCPTrAqaA8TMg" source="_N-EUAE1SEfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_kfOz0E1SEfCPTrAqaA8TMg" name="No" target="_T5vBME1SEfCPTrAqaA8TMg" source="_38LKIE1REfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_2p5NcE1SEfCPTrAqaA8TMg" inPartition="_CLN9kE09EfCL1fz0pZCJ2Q" target="_quFiwE1SEfCPTrAqaA8TMg" source="_T5vBME1SEfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_4vMtEE1SEfCPTrAqaA8TMg" name="Yes" inPartition="_CLN9kE09EfCL1fz0pZCJ2Q" target="_vUxaAE1SEfCPTrAqaA8TMg" source="_quFiwE1SEfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_55QFYE1SEfCPTrAqaA8TMg" inPartition="_CLN9kE09EfCL1fz0pZCJ2Q" target="_wrO2oE1SEfCPTrAqaA8TMg" source="_vUxaAE1SEfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_EMnyoE1TEfCPTrAqaA8TMg" name="No" target="_7goS4E1SEfCPTrAqaA8TMg" source="_quFiwE1SEfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ScRvQE1TEfCPTrAqaA8TMg" inPartition="_AnLA0E1REfCPTrAqaA8TMg" target="_L7pT0E1TEfCPTrAqaA8TMg" source="_7goS4E1SEfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_TCs2EE1TEfCPTrAqaA8TMg" inPartition="_AnLA0E1REfCPTrAqaA8TMg" target="_PrXG0E1TEfCPTrAqaA8TMg" source="_L7pT0E1TEfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="__8Y3EE1TEfCPTrAqaA8TMg" name="No" target="_nKIeYE1TEfCPTrAqaA8TMg" source="_L7pT0E1TEfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_BYHOME1UEfCPTrAqaA8TMg" inPartition="_Ea7mUE1REfCPTrAqaA8TMg" target="_qNW-0E1TEfCPTrAqaA8TMg" source="_nKIeYE1TEfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_B26qEE1UEfCPTrAqaA8TMg" inPartition="_Ea7mUE1REfCPTrAqaA8TMg" target="_uQA78E1TEfCPTrAqaA8TMg" source="_qNW-0E1TEfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_C4whkE1UEfCPTrAqaA8TMg" name="Yes" inPartition="_Ea7mUE1REfCPTrAqaA8TMg" target="_yCgWIE1TEfCPTrAqaA8TMg" source="_uQA78E1TEfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_EGrtQE1UEfCPTrAqaA8TMg" inPartition="_Ea7mUE1REfCPTrAqaA8TMg" target="_0jfsME1TEfCPTrAqaA8TMg" source="_uQA78E1TEfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_EnTHAE1UEfCPTrAqaA8TMg" inPartition="_Ea7mUE1REfCPTrAqaA8TMg" target="_4FsAkE1TEfCPTrAqaA8TMg" source="_0jfsME1TEfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_nYsQUIThEfCF4c5bB88XHA" name="sending N fragments" inPartition="_BKti0E09EfCL1fz0pZCJ2Q" target="_pwV9kE1REfCPTrAqaA8TMg" source="_kBp8cE1REfCPTrAqaA8TMg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_uwF7sIThEfCF4c5bB88XHA" name="Reassembled N Packet" inPartition="_Bss1kE09EfCL1fz0pZCJ2Q" target="_38LKIE1REfCPTrAqaA8TMg" source="_zUBTQE1REfCPTrAqaA8TMg"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_AWuhIE09EfCL1fz0pZCJ2Q" name="Attacker" node="_Il1ggE1REfCPTrAqaA8TMg _UTmIIE1REfCPTrAqaA8TMg _ZbMUEE1REfCPTrAqaA8TMg" edge="_chy4oE1REfCPTrAqaA8TMg _d_XC0E1REfCPTrAqaA8TMg"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_BKti0E09EfCL1fz0pZCJ2Q" name="Router" node="_kBp8cE1REfCPTrAqaA8TMg _pwV9kE1REfCPTrAqaA8TMg" edge="_nYsQUIThEfCF4c5bB88XHA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_Bss1kE09EfCL1fz0pZCJ2Q" name="Firewall " node="_zUBTQE1REfCPTrAqaA8TMg _38LKIE1REfCPTrAqaA8TMg _N-EUAE1SEfCPTrAqaA8TMg _PrOZYE1SEfCPTrAqaA8TMg" edge="_aO0T8E1SEfCPTrAqaA8TMg _b4K3YE1SEfCPTrAqaA8TMg _uwF7sIThEfCF4c5bB88XHA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_CLN9kE09EfCL1fz0pZCJ2Q" name="IDS" node="_T5vBME1SEfCPTrAqaA8TMg _quFiwE1SEfCPTrAqaA8TMg _vUxaAE1SEfCPTrAqaA8TMg _wrO2oE1SEfCPTrAqaA8TMg" edge="_2p5NcE1SEfCPTrAqaA8TMg _4vMtEE1SEfCPTrAqaA8TMg _55QFYE1SEfCPTrAqaA8TMg"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_AnLA0E1REfCPTrAqaA8TMg" name="IPS" node="_7goS4E1SEfCPTrAqaA8TMg _L7pT0E1TEfCPTrAqaA8TMg _PrXG0E1TEfCPTrAqaA8TMg" edge="_ScRvQE1TEfCPTrAqaA8TMg _TCs2EE1TEfCPTrAqaA8TMg"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_Ea7mUE1REfCPTrAqaA8TMg" name="Cloud Server / ICS" node="_nKIeYE1TEfCPTrAqaA8TMg _qNW-0E1TEfCPTrAqaA8TMg _uQA78E1TEfCPTrAqaA8TMg _yCgWIE1TEfCPTrAqaA8TMg _0jfsME1TEfCPTrAqaA8TMg _4FsAkE1TEfCPTrAqaA8TMg" edge="_BYHOME1UEfCPTrAqaA8TMg _B26qEE1UEfCPTrAqaA8TMg _C4whkE1UEfCPTrAqaA8TMg _EGrtQE1UEfCPTrAqaA8TMg _EnTHAE1UEfCPTrAqaA8TMg"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_Il1ggE1REfCPTrAqaA8TMg" name="InitialNode7" outgoing="_chy4oE1REfCPTrAqaA8TMg" inPartition="_AWuhIE09EfCL1fz0pZCJ2Q"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_UTmIIE1REfCPTrAqaA8TMg" name="OpaqueAction8" incoming="_chy4oE1REfCPTrAqaA8TMg" outgoing="_d_XC0E1REfCPTrAqaA8TMg" inPartition="_AWuhIE09EfCL1fz0pZCJ2Q"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ZbMUEE1REfCPTrAqaA8TMg" name="OpaqueAction9" incoming="_d_XC0E1REfCPTrAqaA8TMg" outgoing="_rNgfIE1REfCPTrAqaA8TMg" inPartition="_AWuhIE09EfCL1fz0pZCJ2Q"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_kBp8cE1REfCPTrAqaA8TMg" name="OpaqueAction12" incoming="_rNgfIE1REfCPTrAqaA8TMg" outgoing="_nYsQUIThEfCF4c5bB88XHA" inPartition="_BKti0E09EfCL1fz0pZCJ2Q"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_pwV9kE1REfCPTrAqaA8TMg" name="OpaqueAction13" incoming="_nYsQUIThEfCF4c5bB88XHA" outgoing="_WtneEE1SEfCPTrAqaA8TMg" inPartition="_BKti0E09EfCL1fz0pZCJ2Q"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_zUBTQE1REfCPTrAqaA8TMg" name="OpaqueAction16" incoming="_WtneEE1SEfCPTrAqaA8TMg" outgoing="_uwF7sIThEfCF4c5bB88XHA" inPartition="_Bss1kE09EfCL1fz0pZCJ2Q"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_38LKIE1REfCPTrAqaA8TMg" name="Check Packet Size: if > 65535?" incoming="_uwF7sIThEfCF4c5bB88XHA" outgoing="_aO0T8E1SEfCPTrAqaA8TMg _kfOz0E1SEfCPTrAqaA8TMg" inPartition="_Bss1kE09EfCL1fz0pZCJ2Q"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_N-EUAE1SEfCPTrAqaA8TMg" name="Drop Packet" incoming="_aO0T8E1SEfCPTrAqaA8TMg" outgoing="_b4K3YE1SEfCPTrAqaA8TMg" inPartition="_Bss1kE09EfCL1fz0pZCJ2Q"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_PrOZYE1SEfCPTrAqaA8TMg" name="Log to IDS" incoming="_b4K3YE1SEfCPTrAqaA8TMg" inPartition="_Bss1kE09EfCL1fz0pZCJ2Q"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_T5vBME1SEfCPTrAqaA8TMg" name="Receive ICMP Packet" incoming="_kfOz0E1SEfCPTrAqaA8TMg" outgoing="_2p5NcE1SEfCPTrAqaA8TMg" inPartition="_CLN9kE09EfCL1fz0pZCJ2Q"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_quFiwE1SEfCPTrAqaA8TMg" name="Is Signature Malicious?" incoming="_2p5NcE1SEfCPTrAqaA8TMg" outgoing="_4vMtEE1SEfCPTrAqaA8TMg _EMnyoE1TEfCPTrAqaA8TMg" inPartition="_CLN9kE09EfCL1fz0pZCJ2Q"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_vUxaAE1SEfCPTrAqaA8TMg" name="Send Alert" incoming="_4vMtEE1SEfCPTrAqaA8TMg" outgoing="_55QFYE1SEfCPTrAqaA8TMg" inPartition="_CLN9kE09EfCL1fz0pZCJ2Q"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_wrO2oE1SEfCPTrAqaA8TMg" name="Notify IPS" incoming="_55QFYE1SEfCPTrAqaA8TMg" inPartition="_CLN9kE09EfCL1fz0pZCJ2Q"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_7goS4E1SEfCPTrAqaA8TMg" name="Receive ICMP Packet" incoming="_EMnyoE1TEfCPTrAqaA8TMg" outgoing="_ScRvQE1TEfCPTrAqaA8TMg" inPartition="_AnLA0E1REfCPTrAqaA8TMg"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_L7pT0E1TEfCPTrAqaA8TMg" name="Evaluate Severity" incoming="_ScRvQE1TEfCPTrAqaA8TMg" outgoing="_TCs2EE1TEfCPTrAqaA8TMg __8Y3EE1TEfCPTrAqaA8TMg" inPartition="_AnLA0E1REfCPTrAqaA8TMg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_PrXG0E1TEfCPTrAqaA8TMg" name="Block" incoming="_TCs2EE1TEfCPTrAqaA8TMg" inPartition="_AnLA0E1REfCPTrAqaA8TMg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_nKIeYE1TEfCPTrAqaA8TMg" name="Receive ICMP Packet" incoming="__8Y3EE1TEfCPTrAqaA8TMg" outgoing="_BYHOME1UEfCPTrAqaA8TMg" inPartition="_Ea7mUE1REfCPTrAqaA8TMg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_qNW-0E1TEfCPTrAqaA8TMg" name="Reassemble Packet" incoming="_BYHOME1UEfCPTrAqaA8TMg" outgoing="_B26qEE1UEfCPTrAqaA8TMg" inPartition="_Ea7mUE1REfCPTrAqaA8TMg"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_uQA78E1TEfCPTrAqaA8TMg" name="Buffer Overflow?" incoming="_B26qEE1UEfCPTrAqaA8TMg" outgoing="_C4whkE1UEfCPTrAqaA8TMg _EGrtQE1UEfCPTrAqaA8TMg" inPartition="_Ea7mUE1REfCPTrAqaA8TMg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_yCgWIE1TEfCPTrAqaA8TMg" name="Crash System" incoming="_C4whkE1UEfCPTrAqaA8TMg" inPartition="_Ea7mUE1REfCPTrAqaA8TMg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_0jfsME1TEfCPTrAqaA8TMg" name="Complete Transaction" incoming="_EGrtQE1UEfCPTrAqaA8TMg" outgoing="_EnTHAE1UEfCPTrAqaA8TMg" inPartition="_Ea7mUE1REfCPTrAqaA8TMg"/>
+      <node xmi:type="uml:FlowFinalNode" xmi:id="_4FsAkE1TEfCPTrAqaA8TMg" name="End" incoming="_EnTHAE1UEfCPTrAqaA8TMg" inPartition="_Ea7mUE1REfCPTrAqaA8TMg"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_szQxcE1QEfCPTrAqaA8TMg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a_idQIhNEfCkqOHQSWEVCg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a_idQYhNEfCkqOHQSWEVCg" key="Version" value="0.0.29"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a_idQohNEfCkqOHQSWEVCg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a_idQ4hNEfCkqOHQSWEVCg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a_idRIhNEfCkqOHQSWEVCg" key="Date" value="2025-09-01"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a_idRYhNEfCkqOHQSWEVCg" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s0KwYE1QEfCPTrAqaA8TMg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UMLsec4NDF.profile.uml#_dw9jQIdhEfCI69AHEoVYDw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="UMLsec4NDF.profile.uml#_DlZWoA-yEfCLmv7Ng5n3rA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VzvPAIdWEfCdM8mZLVibDA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VzwdIIdWEfCdM8mZLVibDA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UMLsec.profile.uml#__2aSkFWxEfC_FushM_vnRw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="UMLsec.profile.uml#_kGQWQDnkEeCyb9nmG-9Lpw"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLsec4NDF:Firewall xmi:id="_QbOoEE1UEfCPTrAqaA8TMg" base_ActivityPartition="_Bss1kE09EfCL1fz0pZCJ2Q" preventionLevel="&quot;basic&quot;">
+    <FilterRules>high</FilterRules>
+    <responseType>&quot;block&quot; </responseType>
+  </UMLsec4NDF:Firewall>
+  <UMLsec4NDF:IDS xmi:id="_RrumoE1UEfCPTrAqaA8TMg" detectionType="&quot;signature&quot;" anomalyDetection="false" realTimeMonitoring="true" logStorage="&quot;persistent&quot; " base_ActivityPartition="_CLN9kE09EfCL1fz0pZCJ2Q"/>
+  <UMLsec4NDF:IPS xmi:id="_SocGgE1UEfCPTrAqaA8TMg" base_ActivityPartition="_AnLA0E1REfCPTrAqaA8TMg" attackMitigation="true"/>
+  <UMLsec4NDF:Servers xmi:id="_mGUnkGR2EfCtTbH9m8e2oA" base_ActivityPartition="_Ea7mUE1REfCPTrAqaA8TMg"/>
+</xmi:XMI>

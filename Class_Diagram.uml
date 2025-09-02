@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLsec4NDF="http:///schemas/UMLsec4NDF/_dw8VIIdhEfCI69AHEoVYDw/76" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLsec4NDF/_dw8VIIdhEfCI69AHEoVYDw/76 UMLsec4NDF.profile.uml#_dw9jQIdhEfCI69AHEoVYDw">
+  <uml:Model xmi:id="_Mx9f8E9EEfCYrNI8dxxeFw" name="Class_Diagram">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_MyVTYE9EEfCYrNI8dxxeFw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TJQZME9EEfCYrNI8dxxeFw" name="ICMPPacket" visibility="public">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_a4a6wIdfEfCI69AHEoVYDw" name="Constraint6">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4bh0IdfEfCI69AHEoVYDw" name="constraintSpec">
+          <language>OCL</language>
+          <body>self.size &lt;= 65535</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GlgvUE9FEfCYrNI8dxxeFw" name="size">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PlFSYE9FEfCYrNI8dxxeFw" name="type">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_p1ZAoU9JEfCYrNI8dxxeFw" name="router" type="_zrJXEE9EEfCYrNI8dxxeFw" association="_p1XLcE9JEfCYrNI8dxxeFw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_E3-PcE9FEfCYrNI8dxxeFw" name="fragment"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_WNiNEE9FEfCYrNI8dxxeFw" name="reassemble"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zrJXEE9EEfCYrNI8dxxeFw" name="Router">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_a2yQIE9FEfCYrNI8dxxeFw" name="packetForwardingProtocol">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fDFRcE9FEfCYrNI8dxxeFw" name="routingPolicy">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XbnXgk9KEfCYrNI8dxxeFw" name="firewall" type="_1HjDoE9EEfCYrNI8dxxeFw" association="_XbmwcE9KEfCYrNI8dxxeFw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_krBKUE9FEfCYrNI8dxxeFw" name="forward">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_XE-V8E9GEfCYrNI8dxxeFw" name="packet" type="_TJQZME9EEfCYrNI8dxxeFw" direction="inout"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1HjDoE9EEfCYrNI8dxxeFw" name="Firewall">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_F75fsE9HEfCYrNI8dxxeFw" name="preventionLevel">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_z9fiwIdUEfCdM8mZLVibDA" value="high"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wexS8k9KEfCYrNI8dxxeFw" name="ids" type="_2QdzgE9EEfCYrNI8dxxeFw" association="_wewE0E9KEfCYrNI8dxxeFw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wexS9E9KEfCYrNI8dxxeFw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Xbn-kk9KEfCYrNI8dxxeFw" name="router" type="_zrJXEE9EEfCYrNI8dxxeFw" association="_XbmwcE9KEfCYrNI8dxxeFw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Ga7lEE9HEfCYrNI8dxxeFw" name="checkSize">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_UVGZ4E9HEfCYrNI8dxxeFw" name="packet" type="_TJQZME9EEfCYrNI8dxxeFw">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_IZXxEIdVEfCdM8mZLVibDA" value="&lt;65538"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_QSaAgE9HEfCYrNI8dxxeFw" name="drop">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mNVmwE9HEfCYrNI8dxxeFw" name="packet" type="_TJQZME9EEfCYrNI8dxxeFw" direction="out"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2QdzgE9EEfCYrNI8dxxeFw" name="IDS">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yzUP0E9HEfCYrNI8dxxeFw" name="detectionType">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_y5uZ0E9HEfCYrNI8dxxeFw" name="realTimeMonitoring">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5fjW8k9KEfCYrNI8dxxeFw" name="ips" type="_3VSGgE9EEfCYrNI8dxxeFw" association="_5fiv4E9KEfCYrNI8dxxeFw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_x2KrEE9HEfCYrNI8dxxeFw" name="analyze">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_AWPCQE9IEfCYrNI8dxxeFw" name="packet" type="_TJQZME9EEfCYrNI8dxxeFw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ySA5kE9HEfCYrNI8dxxeFw" name="alert"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3VSGgE9EEfCYrNI8dxxeFw" name="IPS">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_RuKXYE9IEfCYrNI8dxxeFw" name="attackMitigation">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_SD9BME9IEfCYrNI8dxxeFw" name="responseType">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_HVoV8k9LEfCYrNI8dxxeFw" name="cloudserver" type="_5ogGUE9EEfCYrNI8dxxeFw" association="_HVnu4E9LEfCYrNI8dxxeFw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HVo9AE9LEfCYrNI8dxxeFw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HVo9AU9LEfCYrNI8dxxeFw" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Qu550E9IEfCYrNI8dxxeFw" name="assess">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_iY7rkE9IEfCYrNI8dxxeFw" name="packet" type="_TJQZME9EEfCYrNI8dxxeFw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_RSxb4E9IEfCYrNI8dxxeFw" name="block">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_o3Y8wE9IEfCYrNI8dxxeFw" name="packet" type="_TJQZME9EEfCYrNI8dxxeFw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5ogGUE9EEfCYrNI8dxxeFw" name="CloudServer">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_7G1vwE9IEfCYrNI8dxxeFw" name="availability">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ItGfME9LEfCYrNI8dxxeFw" name="ics" type="_7Le8AE9EEfCYrNI8dxxeFw" association="_ItF4IE9LEfCYrNI8dxxeFw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ItGfMU9LEfCYrNI8dxxeFw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ItGfMk9LEfCYrNI8dxxeFw" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_-H5tAE9IEfCYrNI8dxxeFw" name="process">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_BaQ1oE9JEfCYrNI8dxxeFw" name="packet" type="_TJQZME9EEfCYrNI8dxxeFw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_FyAR8E9JEfCYrNI8dxxeFw" name="crash"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7Le8AE9EEfCYrNI8dxxeFw" name="ICS">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_S0pB0E9JEfCYrNI8dxxeFw" name="availability">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_baJfEE9JEfCYrNI8dxxeFw" name="process">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_d4V_0E9JEfCYrNI8dxxeFw" name="packet" type="_TJQZME9EEfCYrNI8dxxeFw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_g720IE9JEfCYrNI8dxxeFw" name="crash"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_p1XLcE9JEfCYrNI8dxxeFw" name="Send ICMP" memberEnd="_p1ZAoU9JEfCYrNI8dxxeFw _p1Znsk9JEfCYrNI8dxxeFw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p1YZkE9JEfCYrNI8dxxeFw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p1ZAoE9JEfCYrNI8dxxeFw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_p1Znsk9JEfCYrNI8dxxeFw" name="icmppacket" type="_TJQZME9EEfCYrNI8dxxeFw" association="_p1XLcE9JEfCYrNI8dxxeFw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XbmwcE9KEfCYrNI8dxxeFw" memberEnd="_XbnXgk9KEfCYrNI8dxxeFw _Xbn-kk9KEfCYrNI8dxxeFw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XbnXgE9KEfCYrNI8dxxeFw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XbnXgU9KEfCYrNI8dxxeFw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wewE0E9KEfCYrNI8dxxeFw" memberEnd="_wexS8k9KEfCYrNI8dxxeFw _wexS9U9KEfCYrNI8dxxeFw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wexS8E9KEfCYrNI8dxxeFw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wexS8U9KEfCYrNI8dxxeFw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_wexS9U9KEfCYrNI8dxxeFw" name="firewall" type="_1HjDoE9EEfCYrNI8dxxeFw" association="_wewE0E9KEfCYrNI8dxxeFw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5fiv4E9KEfCYrNI8dxxeFw" name="notify" memberEnd="_5fjW8k9KEfCYrNI8dxxeFw _5fj-Ak9KEfCYrNI8dxxeFw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5fjW8E9KEfCYrNI8dxxeFw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5fjW8U9KEfCYrNI8dxxeFw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5fj-Ak9KEfCYrNI8dxxeFw" name="ids" type="_2QdzgE9EEfCYrNI8dxxeFw" association="_5fiv4E9KEfCYrNI8dxxeFw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HVnu4E9LEfCYrNI8dxxeFw" memberEnd="_HVoV8k9LEfCYrNI8dxxeFw _HVo9Ak9LEfCYrNI8dxxeFw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HVoV8E9LEfCYrNI8dxxeFw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HVoV8U9LEfCYrNI8dxxeFw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_HVo9Ak9LEfCYrNI8dxxeFw" name="ips" type="_3VSGgE9EEfCYrNI8dxxeFw" association="_HVnu4E9LEfCYrNI8dxxeFw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ItF4IE9LEfCYrNI8dxxeFw" memberEnd="_ItGfME9LEfCYrNI8dxxeFw _ItGfM09LEfCYrNI8dxxeFw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ItF4IU9LEfCYrNI8dxxeFw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ItF4Ik9LEfCYrNI8dxxeFw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ItGfM09LEfCYrNI8dxxeFw" name="cloudserver" type="_5ogGUE9EEfCYrNI8dxxeFw" association="_ItF4IE9LEfCYrNI8dxxeFw"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SdhUkE9EEfCYrNI8dxxeFw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zASwQIg8EfCz_vcIleB65Q" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zASwQYg8EfCz_vcIleB65Q" key="Version" value="0.0.29"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zASwQog8EfCz_vcIleB65Q" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zASwQ4g8EfCz_vcIleB65Q" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zASwRIg8EfCz_vcIleB65Q" key="Date" value="2025-09-01"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zASwRYg8EfCz_vcIleB65Q" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SdrFkE9EEfCYrNI8dxxeFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UMLsec4NDF.profile.uml#_dw9jQIdhEfCI69AHEoVYDw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="UMLsec4NDF.profile.uml#_DlZWoA-yEfCLmv7Ng5n3rA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_g9FZwIhNEfCkqOHQSWEVCg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_g9Gn4IhNEfCkqOHQSWEVCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UMLsec.profile.uml#__2aSkFWxEfC_FushM_vnRw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="UMLsec.profile.uml#_kGQWQDnkEeCyb9nmG-9Lpw"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLsec4NDF:Router xmi:id="_BK5O0E9HEfCYrNI8dxxeFw" packetForwardingProtocol="{&quot;ICMP&quot;}" routingPolicy="{&quot;static&quot; , &quot;dynamic&quot;}" base_Class="_zrJXEE9EEfCYrNI8dxxeFw"/>
+  <UMLsec4NDF:attacker xmi:id="_CxKCAE9HEfCYrNI8dxxeFw" base_Class="_TJQZME9EEfCYrNI8dxxeFw"/>
+  <UMLsec4NDF:Firewall xmi:id="_orH30E9HEfCYrNI8dxxeFw" base_Class="_1HjDoE9EEfCYrNI8dxxeFw" Rate_Limiting="1" preventionLevel="&quot;basic&quot;">
+    <FilterRules>{ &quot;deny all&quot;, &quot;allow 192.168.0.1&quot;, &quot;allow 10.0.0.0/24&quot; }</FilterRules>
+    <attackMitigation>{ &quot;DropPacket&quot;, &quot;AlertAdmin&quot; }</attackMitigation>
+    <responseType>{ &quot;Reject&quot;, &quot;Log&quot; , &quot;drop&quot;}</responseType>
+  </UMLsec4NDF:Firewall>
+  <UMLsec4NDF:IDS xmi:id="_EILC0E9IEfCYrNI8dxxeFw" detectionType="&quot;signature&quot;" anomalyDetection="false" realTimeMonitoring="true" base_Class="_2QdzgE9EEfCYrNI8dxxeFw"/>
+  <UMLsec4NDF:IPS xmi:id="_qjCmQE9IEfCYrNI8dxxeFw" attackResponse="&quot;Block Traffic&quot;" base_Class="_3VSGgE9EEfCYrNI8dxxeFw" attackMitigation="true"/>
+  <UMLsec4NDF:Servers xmi:id="_IHNOwE9JEfCYrNI8dxxeFw" base_Class="_5ogGUE9EEfCYrNI8dxxeFw" criticality="&quot;high&quot;" hostingEnvironment="&quot;cloud&quot;"/>
+  <UMLsec4NDF:Servers xmi:id="_rveYcIdUEfCdM8mZLVibDA" base_Class="_7Le8AE9EEfCYrNI8dxxeFw"/>
+</xmi:XMI>

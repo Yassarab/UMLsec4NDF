@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLsec4NDF="http:///schemas/UMLsec4NDF/_dw8VIIdhEfCI69AHEoVYDw/76" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLsec4NDF/_dw8VIIdhEfCI69AHEoVYDw/76 UMLsec4NDF.profile.uml#_dw9jQIdhEfCI69AHEoVYDw">
+  <uml:Model xmi:id="_dhsywE6LEfCPTrAqaA8TMg" name="Component_Diagram">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_diMiAE6LEfCPTrAqaA8TMg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Node" xmi:id="_Kt9qIE6PEfCPTrAqaA8TMg" name="AttackerNode"/>
+    <packagedElement xmi:type="uml:Device" xmi:id="_sfRBcE6PEfCPTrAqaA8TMg" name="Router" visibility="public"/>
+    <packagedElement xmi:type="uml:Node" xmi:id="_Mpd4EE6QEfCPTrAqaA8TMg" name="Cloud Server"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_YlVNIE6QEfCPTrAqaA8TMg" name="Admin Console"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_DUTQwE6WEfCPTrAqaA8TMg" name="Security">
+      <packagedElement xmi:type="uml:Node" xmi:id="_DLF5IE6QEfCPTrAqaA8TMg" name="IDS"/>
+      <packagedElement xmi:type="uml:Node" xmi:id="_ImkqYE6QEfCPTrAqaA8TMg" name="IPS"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_W3zFkE6WEfCPTrAqaA8TMg" client="_DLF5IE6QEfCPTrAqaA8TMg" supplier="_ImkqYE6QEfCPTrAqaA8TMg"/>
+      <packagedElement xmi:type="uml:Device" xmi:id="_kEy5EE6bEfCPTrAqaA8TMg" name="Firewall"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Q6jcUE6cEfCPTrAqaA8TMg" client="_kEy5EE6bEfCPTrAqaA8TMg" supplier="_DLF5IE6QEfCPTrAqaA8TMg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_SrEXsE6cEfCPTrAqaA8TMg" client="_ImkqYE6QEfCPTrAqaA8TMg" supplier="_Mpd4EE6QEfCPTrAqaA8TMg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_TVM50E6cEfCPTrAqaA8TMg" client="_ImkqYE6QEfCPTrAqaA8TMg" supplier="_Jb3dME6cEfCPTrAqaA8TMg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_T13W4E6cEfCPTrAqaA8TMg" client="_ImkqYE6QEfCPTrAqaA8TMg" supplier="_YlVNIE6QEfCPTrAqaA8TMg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_WtmZAE6cEfCPTrAqaA8TMg" client="_DLF5IE6QEfCPTrAqaA8TMg" supplier="_YlVNIE6QEfCPTrAqaA8TMg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_d_mDIE6gEfCPTrAqaA8TMg" client="_kEy5EE6bEfCPTrAqaA8TMg" supplier="_ImkqYE6QEfCPTrAqaA8TMg"/>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_6FBrQIdgEfCI69AHEoVYDw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6FCSUIdgEfCI69AHEoVYDw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="UMLsec.profile.uml#__2aSkFWxEfC_FushM_vnRw"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="UMLsec.profile.uml#_kGQWQDnkEeCyb9nmG-9Lpw"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_SWsR4E6WEfCPTrAqaA8TMg" client="_Kt9qIE6PEfCPTrAqaA8TMg" supplier="_sfRBcE6PEfCPTrAqaA8TMg"/>
+    <packagedElement xmi:type="uml:Node" xmi:id="_Jb3dME6cEfCPTrAqaA8TMg" name="ICS "/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_QHtqIE6cEfCPTrAqaA8TMg" client="_sfRBcE6PEfCPTrAqaA8TMg" supplier="_kEy5EE6bEfCPTrAqaA8TMg"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1c9nIE6NEfCPTrAqaA8TMg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iBp1IIhNEfCkqOHQSWEVCg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iBp1IYhNEfCkqOHQSWEVCg" key="Version" value="0.0.29"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iBp1IohNEfCkqOHQSWEVCg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iBp1I4hNEfCkqOHQSWEVCg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iBp1JIhNEfCkqOHQSWEVCg" key="Date" value="2025-09-01"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iBp1JYhNEfCkqOHQSWEVCg" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1c9nIU6NEfCPTrAqaA8TMg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UMLsec4NDF.profile.uml#_dw9jQIdhEfCI69AHEoVYDw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="UMLsec4NDF.profile.uml#_DlZWoA-yEfCLmv7Ng5n3rA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_40_c8IWCEfCsJr5dvBwckw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_41AEAIWCEfCsJr5dvBwckw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UMLsec.profile.uml#__2aSkFWxEfC_FushM_vnRw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="UMLsec.profile.uml#_kGQWQDnkEeCyb9nmG-9Lpw"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLsec4NDF:attacker xmi:id="_MuglkE6PEfCPTrAqaA8TMg" base_Node="_Kt9qIE6PEfCPTrAqaA8TMg" base_Class="_Kt9qIE6PEfCPTrAqaA8TMg"/>
+  <UMLsec4NDF:IDS xmi:id="_FuPLUE6QEfCPTrAqaA8TMg" detectionType="&quot;signature&quot;" anomalyDetection="false" realTimeMonitoring="true" FalsePositiveRate="0.01" base_Class="_DLF5IE6QEfCPTrAqaA8TMg" base_Node="_DLF5IE6QEfCPTrAqaA8TMg"/>
+  <UMLsec4NDF:IPS xmi:id="_J7U20E6QEfCPTrAqaA8TMg" attackResponse="&quot;Block Traffic&quot;" base_Class="_ImkqYE6QEfCPTrAqaA8TMg" base_Node="_ImkqYE6QEfCPTrAqaA8TMg" attackMitigation="true"/>
+  <UMLsec4NDF:Firewall xmi:id="_nPsu0E6bEfCPTrAqaA8TMg" blockUntrustedTraffic="true" base_Class="_kEy5EE6bEfCPTrAqaA8TMg" base_Node="_kEy5EE6bEfCPTrAqaA8TMg" preventionLevel="&quot;basic&quot;">
+    <FilterRules>&quot;ICMP&quot;</FilterRules>
+    <responseType>&quot;Drop&quot;</responseType>
+  </UMLsec4NDF:Firewall>
+  <UMLsec4NDF:Router xmi:id="_klybYE6dEfCPTrAqaA8TMg" base_Node="_sfRBcE6PEfCPTrAqaA8TMg" routingPolicy="&quot;dynamic&quot;" base_Class="_sfRBcE6PEfCPTrAqaA8TMg"/>
+  <UMLsec4NDF:Servers xmi:id="_BPf74E6gEfCPTrAqaA8TMg" base_Node="_Jb3dME6cEfCPTrAqaA8TMg" base_Class="_Jb3dME6cEfCPTrAqaA8TMg"/>
+  <UMLsec4NDF:Servers xmi:id="_EM12wE6gEfCPTrAqaA8TMg" base_Node="_Mpd4EE6QEfCPTrAqaA8TMg" base_Class="_Mpd4EE6QEfCPTrAqaA8TMg"/>
+</xmi:XMI>
